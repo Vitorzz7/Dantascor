@@ -1,0 +1,114 @@
+.secao-localizacao {
+  padding-bottom: 100px;
+}
+
+.localizacao-endereco {
+  max-width: 560px;
+  margin: 0 auto 40px;
+  color: var(--texto-secundario);
+  font-size: 15px;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.localizacao-endereco .icon-react {
+  color: var(--dourado-claro);
+  margin-right: 6px;
+}
+
+.localizacao-container {
+  display: flex;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.localizacao-mapa {
+  flex: 1.4;
+  min-width: 300px;
+  height: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--borda);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.localizacao-agendamento {
+  flex: 1;
+  min-width: 280px;
+  background: var(--bg-card);
+  border: 1px solid var(--borda);
+  border-radius: 20px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.localizacao-agendamento h3 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.localizacao-agendamento p {
+  color: var(--texto-secundario);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.btn-agendamento {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--borda);
+  background: #0d0d0d;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-agendamento:hover {
+  border-color: var(--dourado-claro);
+  transform: translateX(4px);
+}
+
+.btn-agendamento .icon-react {
+  color: var(--dourado-claro);
+  font-size: 16px;
+}
+
+.btn-agendamento-whatsapp {
+  background: #25D366;
+  color: #0d0d0d;
+  border: none;
+}
+
+.btn-agendamento-whatsapp .icon-react {
+  color: #0d0d0d;
+}
+
+.btn-agendamento-whatsapp:hover {
+  transform: translateY(-2px) translateX(0);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+@media (max-width: 768px) {
+  .localizacao-container {
+    flex-direction: column;
+  }
+  .localizacao-mapa {
+    height: 300px;
+  }
+}

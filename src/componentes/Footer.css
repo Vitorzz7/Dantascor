@@ -1,0 +1,164 @@
+.footer {
+  background: #0a0a0a;
+  border-top: 1px solid var(--borda);
+  padding: 60px 48px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.footer-coluna {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-sobre {
+  flex: 1.4;
+  min-width: 260px;
+}
+
+.footer-sobre p {
+  color: var(--texto-secundario);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.footer-socials-texto {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials-texto a {
+  color: var(--dourado-claro);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+}
+
+.footer-socials-texto a:hover {
+  opacity: 0.7;
+}
+
+.footer h4 {
+  color: var(--dourado-claro);
+  font-size: 15px;
+  margin: 0 0 6px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-coluna a {
+  color: var(--texto-secundario);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-coluna a:hover {
+  color: var(--dourado-claro);
+}
+
+.footer-coluna p {
+  color: var(--texto-secundario);
+  font-size: 13.5px;
+  margin: 0;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.footer-coluna p .icon-react {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.footer-linha-baixo {
+  border-top: 1px solid var(--borda);
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-linha-baixo p {
+  color: #6b6873;
+  font-size: 12.5px;
+  margin: 0;
+}
+
+.footer-cnpj {
+  font-size: 11.5px !important;
+  opacity: 0.7;
+}
+
+.footer-cnpj a {
+  color: #6b6873;
+  text-decoration: underline;
+}
+
+.footer-cnpj a:hover {
+  color: var(--dourado-claro);
+}
+
+.footer-credito {
+  font-size: 11px !important;
+  opacity: 0.6;
+}
+
+.footer-credito a {
+  color: #6b6873;
+  text-decoration: underline;
+}
+
+.footer-credito a:hover {
+  color: var(--dourado-claro);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 32px 20px 0;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 16px;
+    padding-bottom: 24px;
+  }
+
+  .footer-sobre {
+    grid-column: 1 / -1;
+  }
+
+  .footer-coluna {
+    min-width: 0;
+    gap: 6px;
+  }
+
+  .footer h4 {
+    font-size: 13px;
+  }
+
+  .footer-coluna a,
+  .footer-coluna p {
+    font-size: 12.5px;
+  }
+
+  .footer-linha-baixo {
+    padding: 14px 0;
+  }
+}
