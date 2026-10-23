@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaWhatsapp, FaEnvelope, FaPhoneAlt, FaClock, FaPaperPlane } from 'react-icons/fa'
-import logo from '../assets/Logo.png'
+import logo from '../assets/logo.png'
 
 function Contato() {
   const [form, setForm] = useState({
