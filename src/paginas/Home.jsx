@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import equipe from '../assets/Familia dantas.jpeg'
-import logo from '../assets/Logo.png'
+import logo from '../assets/logo.png'
 import { useNavigate } from 'react-router-dom'
 import { servicos } from '../dados/servicos'
 
