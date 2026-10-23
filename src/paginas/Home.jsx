@@ -1,47 +1,39 @@
-import {useState} from 'react'
-import equipe from '../assets/Familia dantas.jpeg'
+import { useState } from 'react'
+import equipe from '../assets/Familia dantas.jpg'
 import logo from '../assets/logo.png'
 import { useNavigate } from 'react-router-dom'
 import { servicos } from '../dados/servicos'
 
-
 function Home() {
+  const navigate = useNavigate()
 
+  const [indiceAtual, setIndiceAtual] = useState(0)
 
-const navigate = useNavigate()
+  const servicoAtual = servicos[indiceAtual]
 
-
-const [indiceAtual, setIndiceAtual] = useState(0)
-
-const servicoAtual = servicos[indiceAtual]
-
-const proximoServico = () => {
-  if(indiceAtual === servicos.length - 1){
-    setIndiceAtual(0)
-  }else{
-  setIndiceAtual(indiceAtual + 1)
+  const proximoServico = () => {
+    if (indiceAtual === servicos.length - 1) {
+      setIndiceAtual(0)
+    } else {
+      setIndiceAtual(indiceAtual + 1)
+    }
   }
-}
 
-const servicoAnterior = () => {
-  if(indiceAtual === 0){
-    setIndiceAtual(servicos.length - 1)
-  }else{
-  setIndiceAtual(indiceAtual - 1)
+  const servicoAnterior = () => {
+    if (indiceAtual === 0) {
+      setIndiceAtual(servicos.length - 1)
+    } else {
+      setIndiceAtual(indiceAtual - 1)
+    }
   }
-}
-
-
 
   return (
     <div id="home" className="secao">
-
       <div className='intro'>
         <div className='intro-texto'>
           <h4>A ESCOLHA CERTA PARA VOCÊ</h4>
           <h2>Viva sem preocupações, confiando a sua segurança à <span className="destaque">Dantascorr</span></h2>
           <p>Proteção que você pode confiar, em cada viagem e em cada momento, de forma simples e rápida</p>
-          
         </div>
 
         <div className="intro-imagem-wrapper">
@@ -109,8 +101,6 @@ const servicoAnterior = () => {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }
